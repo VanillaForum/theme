@@ -1,0 +1,13 @@
+body {
+	font-family: $bodyFontFamily;
+	font-size: $bodyFontSize;
+	color: $bodyTextColor;
+}
+
+a {
+	color: $linkColor;
+	&:hover {
+		color: $linkHoverColor;
+		text-decoration: none;
+	}
+}

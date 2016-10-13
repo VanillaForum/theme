@@ -1,0 +1,16 @@
+#Deny from all
+
+RewriteEngine on
+
+RewriteCond $1 !^(index\.php|html|assets|user_guide|files|images|emoticons|robots\.txt|fedextransactions\.log)
+
+RewriteRule ^(.*)$ /~dropby/index.php/$1 [L]
+
+RewriteCond $1 !^(index\.php|library|user_guide|images|files|robots\.txt|data|html|media|assets|css|js)
+
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+
+
+
+

@@ -1,0 +1,262 @@
+@media only screen and (min-width : 767px) {
+	.visible-mobile {
+		display: none;
+	}
+	.hidden-mobile {
+		display: block;
+	}
+	.header {
+		.navbar-toggle {
+			font-size: 13px;
+			left: 40px;
+		}
+		.login-section {
+			display: block;  	
+		}
+	}
+	.slider {
+		.item {
+			> div {
+				.banner-text {
+					font-size: 72px;
+					line-height: 76px;
+				}
+				.banner-subtext {
+					font-size: 30px;
+				}
+			}
+		}
+		.slider-btn {
+			top: 58%;
+		}
+	}
+	.video-section {
+		padding-top: 60px;
+		.coming-up-project, .support {
+			.project-text {
+				text-align: left;
+			}	
+			.project-btn {
+				margin-top: 0;
+				text-align: right;
+			}
+		}
+		p {
+			margin-top: 80px;
+		}
+		span {
+			font-size: 24px;
+		}
+		.sponsors {
+			> div {
+				margin-bottom: 0;
+				width: auto;
+				display: inline-block;
+			}
+		}
+		.support {
+			margin-top: 70px;
+			margin-bottom: 75px;
+		}	
+	}
+	.question-section {
+		margin: 98px auto;
+	}
+	.newsletter-section .form-inline .form-group {
+		margin-bottom: 58px;
+	}
+	.review-section h1, .our-focus h1 {
+		font-size: 48px;
+	}
+	.our-focus {
+		margin-top: 67px;
+	}
+	.our-focus .home-blocks .s-block {
+		margin-bottom: 0;
+	}
+	.review-section {
+		margin-top: 59px;
+		margin-bottom: 103px;
+		.review-slider {
+			.owl-buttons {
+				.owl-prev {
+					left: -30px;
+					top: 0;
+				}
+				.owl-next {
+					right: -30px;
+					top: 0;
+				}
+			}		
+			.s-client {
+				> img {
+					float: left;
+					margin-top: -35px;
+				}
+				.client-detail {
+					margin-left: 121px;
+				}
+			}
+			#client-review {
+				left: 0;
+			}
+		}	
+	}
+	.footer {
+		padding: 70px 0;
+		.footer-mobile {
+			text-align: left;
+			margin-bottom: 0;
+		}
+	}
+	/*Project*/
+	.project-header {
+		.project-logo {
+			float: left;
+		}
+		.project-profile {
+			float: right;
+			margin-top: -20px;
+			padding-top: 20px;
+			.dropdown-menu {
+				min-width: 145px;
+			}
+		}
+	}
+	.tab-menu {
+		.tab-info {
+			.nav-tabs {
+				li {
+					> a {
+						font-size: 12px;
+					}	
+				}	
+			} 
+		}	
+		.project-details {
+			padding: 20px 80px 0 80px;
+			&:last-child {
+				padding: 20px 80px 80px 80px; 
+			}
+			.project-description {
+				padding: 25px 0 0 0;
+			}
+			.budget-project {
+				span {
+					margin-left: 20px;
+				}
+			}
+		}
+	}
+	.dropdown-menu {
+		width: 50% !important;
+	}
+	/*Client*/
+	.preference-section {
+		#preference-form {
+			.form-group {
+				margin-bottom: 20px;
+				&:last-child {
+					margin-bottom: 40px;
+				}
+				.form-control {
+					margin-bottom: 0;
+					&:last-child {
+						margin-bottom: 0;
+					}	
+				}
+				.type-b {
+					margin-bottom: 0;
+				}
+			}	
+		}
+		.billing-info {
+			margin-top: 30px;
+			h5 {
+				text-align: left;
+			}
+			ul {
+				li {
+					margin-bottom: 0;
+				}
+			}
+			.add-credit-card {
+				text-align: left;
+				margin-bottom: 20px;
+			}
+		}
+	}	
+	/*Modal*/
+	.modal-header {
+		.bg-modal1 {
+			position: absolute;
+			bottom: 0;
+			left: 120px;
+			display: block !important;
+		}
+		.bg-modal2 {
+			position: absolute;
+			bottom: 0;
+			left: 80px;
+			display: block !important;
+		}
+	}	
+	.modal-dialog {
+		width: 500px;
+		.modal-content {
+			.modal-body	{
+				form {
+					.form-group {
+						.col-xs-12 {
+							margin-bottom: 0;
+						}
+						.col-sm-12 {
+							margin-bottom: 0;
+						}
+					}
+					label {
+						margin-left: 20px;
+					}	
+				}
+			}
+		}
+	}
+	.personal-info {
+		padding: 40px;
+		.personal-img {
+			margin-bottom: 10px;
+		}
+		#info-form {
+			.form-group {
+				> div {
+					margin-bottom: 0;
+				}
+			}
+		}
+		.skill-section {
+/*			span {
+				margin-bottom: 0;
+			}*/
+		}
+		.save-btn  {
+			text-align: right;
+		}
+	}
+	#review {
+		.rating {
+			margin-top: 50px;
+			.s-client {
+				&:last-child {
+					margin-bottom: 0;
+				}
+				> img {
+					float: left;
+					margin-top: -35px;
+				}
+				.client-detail {
+					margin-left: 121px;
+				}
+			}
+		}	
+	}
+}

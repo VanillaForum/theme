@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Drop By Tech</title>
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href="assets/css/framework.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="client-post-project-modal modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<span></span>
+					<img class="close" data-dismiss="modal" aria-hidden="true" src="assets/images/cancel-btn.png">
+					<img class="bg-modal1" src="assets/images/bg-modal1.png">
+					<h4 class="modal-title text-center">Post a project</h4>	
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal">
+						<div class="form-group">
+							<div class="col-xs-12 col-sm-4">
+								<label for="name">Deliver by</label>
+								<input type="text" class="form-control deliver-by" placeholder="Some Text Here..." id="datepicker" />
+							</div>
+							<div class="col-xs-12 col-sm-4">
+								<label for="name">Zip Code</label>
+								<input type="text" class="form-control zip-code" id="zip-code" placeholder="Some Text Here..." data-toggle="tooltip" data-placement="bottom" title="The default radius is 25 miles" />
+							</div>
+							<div class="col-xs-12 col-sm-4">
+								<label for="name">Budget</label>
+								<input type="text" class="form-control" placeholder="Min $100"/>
+							</div>    
+						</div>
+						<div class="form-group">
+							<div class="col-sm-12">
+								<input type="text" class="form-control col-sm-10" name="name" placeholder="Title"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-12">
+								<textarea class="form-control custom-control" rows="5" placeholder="Description Be as descriptive as possible. Anything that doesn't appear in the description will not be worked on."></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-12 text-center file-upload-field">
+								<span class="file-upload">Upload a Document</span><input type="file">
+								<span class="file-format">(PDF, Word, Excel, jpg, powerpoint)</span>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-12 text-center">
+								<button type="submit" class="btn type-c">Post</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bg-img" style="background-image: url(assets/images/banner-1.png); background-size:cover">
+		<div class="project-header">
+			<div class="project-logo">
+				<a href="javascript:void(0);"><img src="assets/images/logo.png" class="img-responsive" /></a>
+			</div>
+			<div class="project-profile hidden-mobile">
+				<ul class="nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle">
+							<img src="assets/images/client-project.png" alt="" />
+							<span>John Doe</span>
+							<img src="assets/images/client-project-arrow.png" alt="" />
+						</a>
+						<ul class="dropdown-menu" id="menu1">
+							<li><a href="#"><img src="assets/images/profile.png" />Profile</a></li>
+							<li><a href="#"><img src="assets/images/log-out.png" />Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="project-button">
+				<a href="javascript:void(0);" data-toggle="modal" data-target="#myModal" class="btn type-a">Post a Project</a>
+				<a href="javascript:void(0);" class="btn type-b">My Projects</a>
+			</div>
+			<div class="project-profile visible-mobile">
+				<ul class="nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle">
+							<img src="assets/images/client-project.png" alt="" />
+							<span>John Doe</span>
+							<img src="assets/images/client-project-arrow.png" alt="" />
+						</a>
+						<ul class="dropdown-menu" id="menu1">
+							<li><a href="#"><img src="assets/images/profile.png" />Profile</a></li>
+							<li><a href="#"><img src="assets/images/log-out.png" />Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="tab-menu">
+			<div class="container">
+				<div class="row tab-info">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#info-tab" data-toggle="tab">Open Projects</a></li>
+						<li><a href="#address-tab" data-toggle="tab">ArchiveD</a></li>
+					</ul>
+				</div>
+				<div class="row project-details">
+					<div class="col-xs-12 col-sm-12 col-md-12">
+						<div class="row">
+							<div class="col-xs-12 col-sm-2 col-md-2 text-center">
+								<img src="assets/images/client-4.png" alt="" />
+								<h6>john M.</h6>
+							</div>
+							<div class="col-xs-12 col-sm-7 col-md-8">
+								<h4>Help with my computer!!!</h4>
+								<span>Deliver by - Feb 27, 2015</span>
+								<p>I need help repairing my computer consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ...</p>
+							</div>
+							<div class="col-xs-12 col-sm-3 col-md-2 budget-project">
+								<span>Budget: $100</span><br>
+								<span>Bids: 5</span><br>
+								<div class="text-center">
+									<a href="javascript:void(0);" class="btn btn-link">View Details</a>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row project-details">
+					<div class="col-xs-12 col-sm-12 col-md-12 project-client">
+						<div class="row">
+							<div class="col-xs-12 col-sm-2 col-md-2 text-center">
+								<img src="assets/images/client-4.png" alt="" />
+								<h6>john M.</h6>
+							</div>
+							<div class="col-xs-12 col-sm-7 col-md-8">
+								<h4>Help with my computer!!!</h4>
+								<span>Deliver by - Feb 27, 2015</span>
+								<p>I need help repairing my computer consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ...</p>
+							</div>
+							<div class="col-xs-12 col-sm-3 col-md-2 budget-project">
+								<span>Budget: $100</span><br>
+								<span>Bids: 5</span><br>
+								<div class="text-center">
+									<a href="javascript:void(0);" class="btn btn-link">View Details</a>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row project-details">
+					<div class="col-xs-12 col-sm-12 col-md-12 project-client">
+						<div class="row">
+							<div class="col-xs-12 col-sm-2 col-md-2 text-center">
+								<img src="assets/images/client-4.png" alt="" />
+								<h6>john M.</h6>
+							</div>
+							<div class="col-xs-12 col-sm-7 col-md-8">
+								<h4>Help with my computer!!!</h4>
+								<span>Deliver by - Feb 27, 2015</span>
+								<p>I need help repairing my computer consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ...</p>
+							</div>
+							<div class="col-xs-12 col-sm-3 col-md-2 budget-project">
+								<span>Budget: $100</span><br>
+								<span>Bids: 5</span><br>
+								<div class="text-center">
+									<a href="javascript:void(0);" class="btn btn-link">View Details</a>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-6">
+					<div class="row">
+						<div class="col-xs-12 col-sm-4 col-md-4 footer-mobile">
+							<h5>Drop By Tech</h5>
+							<ul class="list-unstyled">
+								<li><a href="javascript:void(0);">About us</a></li>
+								<li><a href="javascript:void(0);">Blog</a></li>
+								<li><a href="javascript:void(0);">Legal</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-4 footer-mobile">
+							<h5>Clients</h5>
+							<ul class="list-unstyled">
+								<li><a href="javascript:void(0);">How to use Drop By Tech</a></li>
+								<li><a href="javascript:void(0);">Sign Up</a></li>
+								<li><a href="javascript:void(0);">Support Center</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-4 footer-mobile">
+							<h5>IT Contractors</h5>
+							<ul class="list-unstyled">
+								<li><a href="javascript:void(0);">How to use Drop By Tech</a></li>
+								<li><a href="javascript:void(0);">Sign Up</a></li>
+								<li><a href="javascript:void(0);">Support Center</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-6 footer-mobile">
+							<h5>questions</h5>
+							<ul class="list-unstyled">
+								<li><strong>Email:</strong> <a href="javascript:void(0);">Support@DropByTech.com</a></li>
+								<li><strong>Phone Number:</strong> <a href="javascript:void(0);">1 (800) 666-6666</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 text-center">
+							<img src="assets/images/footer-logo.png" alt="" />
+							<ul class="list-inline footer-links">
+								<li><a href="javascript:void(0);">Privacy Policy</a></li>
+								<li><a href="javascript:void(0);">Terms of Use</a></li>
+							</ul>
+							<ul class="list-inline footer-social">
+								<li class="icon-facebook"><a href="javascript:void(0);">Facebook</a></li>
+								<li class="icon-google"><a href="javascript:void(0);">Google Plus</a></li>
+								<li class="icon-twitter"><a href="javascript:void(0);">Twitter</a></li>
+								<li class="icon-pinterest"><a href="javascript:void(0);">Pinterest</a></li>
+								<li class="icon-rss"><a href="javascript:void(0);">RSS</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="assets/js/vendor/jquery.min.js"></script>
+	<script src="assets/js/vendor/jquery-ui.js"></script>
+	<script src="assets/js/vendor/bootstrap.js"></script>
+	<script src="assets/js/vendor/owl.carousel.js"></script>
+	<script src="assets/js/vendor/jquery.placeholder.js"></script>
+	<script src="assets/js/app/custom.js"></script>
+	<script type="text/javascript">
+		$("#datepicker").datepicker();
+	</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+//Custom Variables;
+$imagesPath: "../images/";
+
+
+$fontFamilyExtraA: "Open Sans", Arial, Sans-serif;
+$bodyFontFamily: $fontFamilyExtraA;
+$bodyFontSize: 12px;
+$bodyTextColor: #000;
+
+$white: #ffffff;
+$black: #000000;
+$btnTypeA: #07abf2;
+$btnTypeB: #444444;
+$btnTypeC: #888888;
+$btnTypeD: #427f99;
+$linkColor: $white;
+$linkHoverColor: $white;
+
+$navbarTextColor: "";
+$navbarAnchorColor: "";
+$navbarHoverColor: "";
+
+$h1Color: "";
+$h2Color: "";
+
+$fontsPath: "../fonts/";
+$iconsImage: "assets/images/icon.png";
+
+//Bootstrap variables
+$icon-font-path : $fontsPath + "bootstrap/";

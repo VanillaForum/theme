@@ -1,0 +1,69 @@
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 2;
+	margin: 0;
+	@include border-radius(0);
+	width: 100%;
+	background: rgba(0,0,0,0.7);
+	@include transition(opacity 0.3s ease);
+	display: none;
+	opacity: 0;
+
+	&.menu-open {
+		opacity: 1;
+		.navbar-container {
+			@include transform(translateX(0));
+		}
+	}
+
+	.navbar-container {
+		width: 290px;
+		padding: 30px;
+		background: $white;
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		@include transform(translateX(-100%));
+		@include transition(transform 0.5s ease);
+	}
+
+	.btn.type-b {
+		width: 100%;
+		padding: 13px 12px;
+		text-transform: uppercase;
+	}
+
+	.navbar-control {
+		margin-bottom: 36px;
+		.btn-link {
+			float: right;
+			text-transform: uppercase;
+			color: #a8a8a8;
+		}
+		.close-menu .glyphicon-remove {
+			font-size: 30px;
+			color: #d1d1d1;
+		}
+	}
+	ul {
+		list-style: none;
+		margin: 32px 0 0;
+		padding: 0;
+		font-size: 18px;
+		font-weight: 300; 
+		border-top: 1px solid #d8d8d8;
+
+		li {
+			border-bottom: 1px solid #d8d8d8;
+			a {
+				color: $btnTypeB;
+				display: block;
+				padding: 12px 17px;
+			}
+		}
+	}
+}

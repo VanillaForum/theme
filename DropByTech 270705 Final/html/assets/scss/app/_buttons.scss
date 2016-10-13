@@ -1,0 +1,28 @@
+.btn {
+  &.type-a {
+    border: 0;
+    color: $linkColor;
+    background-color: $btnTypeA;
+    @include border-radius(7px);
+    @include box-shadow(0 2px 0 #036894);
+    @include typea-background;
+    &:hover {
+      background-position: 0 -15px;
+      @include transition(.1s linear background-position);
+      text-shadow: 0px -1px 0px #078cc6;
+      background-color: #078cc6;      
+    }
+  }
+  &.type-b {
+    color: #07abf2;
+    @include border-radius(5px);
+    border: 2px solid #07abf2;
+  }
+  &.type-c {
+    border: 0; 
+    color: $white;
+    background: #f26d5e;
+    @include border-radius(7px);
+    @include typec-background;
+  }
+}

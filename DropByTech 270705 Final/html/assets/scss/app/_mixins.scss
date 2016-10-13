@@ -1,0 +1,27 @@
+@mixin placeholder {
+	&.placeholder {
+		@content;
+	}
+	&:-moz-placeholder {
+		@content;
+	}
+	&::-webkit-input-placeholder {
+		@content;
+	}
+	&:-ms-input-placeholder {
+		@content;
+	}
+	&::placeholder {
+		@content;
+	}
+}
+
+@mixin typea-background {
+	@include background(linear-gradient(top, #07abf2 0%, #078cc6 100%));
+	background-repeat: no-repeat;
+}
+
+@mixin typec-background {
+	@include background(linear-gradient(top, #f26d5e 0%, #FF9589 100%));
+	background-repeat: no-repeat;
+}

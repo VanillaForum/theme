@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Drop By Tech</title>
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href="assets/css/framework.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="client-post-project-modal modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<span></span>
+					<img class="close" data-dismiss="modal" aria-hidden="true" src="assets/images/cancel-btn.png">
+					<img class="bg-modal1" src="assets/images/bg-modal1.png">
+					<h4 class="modal-title text-center">Post a project</h4>	
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal">
+						<div class="form-group">
+							<div class="col-xs-12 col-sm-4">
+								<label for="name">Deliver by</label>
+								<input type="text" class="form-control deliver-by" placeholder="Some Text Here..." id="datepicker" />
+							</div>
+							<div class="col-xs-12 col-sm-4">
+								<label for="name">Zip Code</label>
+								<input type="text" class="form-control zip-code" id="zip-code" placeholder="Some Text Here..." data-toggle="tooltip" data-placement="bottom" title="The default radius is 25 miles" />
+							</div>
+							<div class="col-xs-12 col-sm-4">
+								<label for="name">Budget</label>
+								<input type="text" class="form-control" placeholder="Min $100"/>
+							</div>    
+						</div>
+						<div class="form-group">
+							<div class="col-sm-12">
+								<input type="text" class="form-control col-sm-10" name="name" placeholder="Title"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-12">
+								<textarea class="form-control custom-control" rows="5" placeholder="Description Be as descriptive as possible. Anything that doesn't appear in the description will not be worked on."></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-12 text-center file-upload-field">
+								<span class="file-upload">Upload a Document</span><input type="file">
+								<span class="file-format">(PDF, Word, Excel, jpg, powerpoint)</span>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-12 text-center">
+								<button type="submit" class="btn type-c">Post</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="credit-card-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog certificate">
+			<div class="modal-content">
+				<div class="modal-header">
+					<span></span>
+					<img class="close" data-dismiss="modal" aria-hidden="true" src="assets/images/cancel-btn.png">
+					<img class="bg-modal2" src="assets/images/bg-modal2.png">
+					<h4 class="modal-title text-center">Add New CREDIT CARD</h4>	
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal">
+						<div class="form-group">
+							<div class="col-sm-12">
+								<input type="text" class="form-control col-sm-10" name="name" placeholder="Cardholder's name"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-12">
+								<input type="text" class="form-control col-sm-10" name="name" placeholder="Card Number"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-12">
+								<input type="text" class="form-control col-sm-10" name="name" placeholder="Security Code"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-xs-12 col-sm-12">
+								<label>Expiration Date</label>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-12">
+								<select class="selectpicker">
+									<option value="1">January</option>
+									<option value='2'>February</option>
+									<option value='3'>March</option>
+									<option value='4'>April</option>
+									<option value='5'>May</option>
+									<option value='6'>June</option>
+									<option value='7'>July</option>
+									<option value='8'>August</option>
+									<option value='9'>September</option>
+									<option value='10'>October</option>
+									<option value='11'>November</option>
+									<option value='12'>December</option>        
+								</select>
+								<select class="selectpicker">
+									<option>2015</option>
+									<option>2016</option>
+									<option>2017</option>
+									<option>2018</option>
+									<option>2019</option>
+									<option>2020</option>
+								</select>
+							</div>	
+						</div>
+						<div class="form-group">
+							<div class="col-sm-12 text-center">
+								<button type="submit" class="btn type-c">add</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bg-img" style="background-image: url(assets/images/banner-1.png); background-size:cover">
+		<div class="project-header">
+			<div class="project-logo">
+				<a href="javascript:void(0);"><img src="assets/images/logo.png" class="img-responsive" /></a>
+			</div>
+			<div class="project-profile hidden-mobile">
+				<ul class="nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle">
+							<img src="assets/images/client-project.png" alt="" />
+							<span>John Doe</span>
+							<img src="assets/images/client-project-arrow.png" alt="" />
+						</a>
+						<ul class="dropdown-menu" id="menu1">
+							<li><a href="#"><img src="assets/images/profile.png" />Profile</a></li>
+							<li><a href="#"><img src="assets/images/log-out.png" />Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="project-button">
+				<a href="javascript:void(0)" data-toggle="modal" data-target="#myModal" class="btn type-a">Post a project</a>
+				<a href="javascript:void(0)" class="btn type-b">My Projects</a>
+			</div>
+			<div class="project-profile visible-mobile">
+				<ul class="nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle">
+							<img src="assets/images/client-project.png" alt="" />
+							<span>John Doe</span>
+							<img src="assets/images/client-project-arrow.png" alt="" />
+						</a>
+						<ul class="dropdown-menu" id="menu1">
+							<li><a href="#"><img src="assets/images/profile.png" />Profile</a></li>
+							<li><a href="#"><img src="assets/images/log-out.png" />Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="tab-menu">
+			<div class="container">
+				<div class="row tab-info">
+					<ul class="nav nav-tabs" role="tablist" id="personal-info">
+						<li class="active"><a href="#personalinfo">Personal Info</a></li>
+						<li><a href="#preference">Preferences</a></li>
+						<li><a href="#review">Reviews</a></li>
+					</ul>
+				</div>
+				<div class="row tab-content personal-info" >
+					<!-- personal info section -->
+					<div role="tabpanel" class="tab-pane active col-xs-12 col-md-12" id="personalinfo">
+						<div class="col-xs-12 col-md-2 personal-img">
+							<img src="assets/images/personal-info1.png" alt="" />
+						</div>
+						<div class="col-xs-12 col-md-10">
+							<form class="form-horizontal" id="info-form">
+								<div class="form-group">
+									<div class="col-xs-12 col-sm-4 combine-field">
+										<input type="text" class="form-control" placeholder="John"/>
+										<input type="text" class="form-control" placeholder="Doe"/>
+									</div>
+									<div class="col-xs-12 col-sm-4">
+										<input type="text" class="form-control" placeholder="john.doe@dropbytech.com" />
+									</div>
+									<div class="col-xs-12 col-sm-4">
+										<input type="text" class="form-control" placeholder="617-555-0115"/>
+									</div>    
+								</div>
+								<div class="form-group">
+									<div class="col-xs-12 col-sm-4">
+										<input type="text" class="form-control" placeholder="DropByTech"/>
+									</div>
+									<div class="col-xs-12 col-sm-4">
+										<input type="text" class="form-control" id="zip-code" placeholder="dropbytech.com" />
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-xs-12 col-sm-4">
+										<input type="text" class="form-control" placeholder="115 Mall Drive"/>
+									</div>
+									<div class="col-xs-12 col-sm-4">
+										<input type="text" class="form-control" id="zip-code" placeholder="Hanford" />
+									</div>
+									<div class="col-xs-12 col-sm-4">
+										<input type="text" class="form-control" placeholder="Georgia"/>
+									</div>    
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12">
+										<textarea class="form-control custom-control" rows="5" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla augue dolor, sed pharetra urna mattis et. Integer bibendum tristique semper. Nunc ac nibh nec nibh sagittis rhoncus ac eu mauris. Ut vel nulla pretium, varius tellus tempus, vehicula libero. In accumsan consequat ante vitae aliquam. Proin interdum libero est. Fusce sapien magna, interdum id gravida sed, vulputate ut urna. Donec augue eros, hendrerit ut est sed, consequat sodales urna. Mauris mi augue, suscipit et porttitor ut, consequat eget ante."></textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-sm-12 save-btn">
+										<a href="javascript:void(0);" data-toggle="modal" data-target="#credit-card-modal-modal" class="btn type-c">Save</a>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- end of personal info -->
+
+					<!-- preference section -->
+					<div role="tabpanel" class="tab-pane col-xs-12 col-md-12 preference-section" id ="preference">
+						<div class="col-xs-12 col-md-12">
+							<form class="form-horizontal" id="preference-form">
+								<div class="form-group">
+									<div class="col-xs-8 col-sm-4 col-md-3">
+										<label>Receive Notifications</label>
+									</div>
+									<div class="col-xs-4 col-sm-8 col-md-9">
+										<p>
+											<input type="checkbox" id="test1" />
+											<label for="test1" class="notification"></label>
+										</p>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-xs-12 col-sm-3 col-md-3">
+										<label>Change Password</label>
+									</div>
+									<div class="col-xs-12 col-sm-3 col-md-3">
+										<input type="text" class="form-control" placeholder="Current Password"/>
+									</div>
+									<div class="col-xs-12 col-sm-3 col-md-3">
+										<input type="text" class="form-control"  placeholder="New Password" />
+									</div>
+									<div class="col-xs-12 col-sm-3 col-md-3">
+										<input type="text" class="form-control" placeholder="Repeat Password"/>
+									</div>    
+								</div>
+								<div class="form-group">
+									<div class="col-sm-6 text-left">
+										<a href="javascript:void(0);" class="btn type-b">Disable My Account<img src="assets/images/disable-account.png" alt="" /></a>
+									</div>
+									<div class="col-sm-6 save-btn">
+										<a href="javascript:void(0);" class="btn type-c">Save</a>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="col-xs-12 col-md-12 billing-info">
+							<h5 class="text-center">Billing Info</h5>
+							<ul>
+								<li><img src="assets/images/billing-info1.png" alt="" /></li>
+								<li>Visa  **** **** **** 4563</li>
+								<li><a href="javascript:void(0);">Delete</a></li>
+								<li><a href="javascript:void(0);" class="default">Default</a></li>
+							</ul>
+							<ul>
+								<li><img src="assets/images/billing-info1.png" alt="" /></li>
+								<li>Visa  **** **** **** 4786</li>
+								<li><a href="javascript:void(0);">Delete</a></li>
+								<li><a href="javascript:void(0);">Make Default</a></li>
+							</ul>
+							<div class="add-credit-card">
+								<a href="javascript:void(0);" data-toggle="modal" data-target="#credit-card-modal" >+ Add a Credit Card</a>
+							</div>
+						</div>
+					</div>
+					<!-- end of preference section -->
+
+					<!-- review section -->
+					<div role="tabpanel" class="tab-pane col-xs-12 col-md-12" id ="review">
+						<h5>Your average rating</h5>
+						<div class="avg-rating">
+							<img src="assets/images/rating-star.png" alt="" />
+						</div>
+						<div class="row rating">
+							<div class="col-xs-12 col-sm-12 col-lg-4">
+								<div class="s-client clearfix">
+									<img src="assets/images/client-1.png" alt="" />
+									<div class="client-detail">
+										<h4>John Klen</h4>
+										<img src="assets/images/rating-star.png" alt="" />
+									</div>
+									<p>Working with Mark C was great dapibus enim venenatis. Quisque finibus libero nisi, ac viverra ipsum tempor at. Vivamus in velit a risus vestibulum pretium id nec ipsum.</p>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-lg-4">
+								<div class="s-client clearfix">
+									<img src="assets/images/client-2.png" alt="" />
+									<div class="client-detail">
+										<h4>Anne Klen</h4>
+										<img src="assets/images/rating-star.png" alt="" />
+									</div>
+									<p>Working with Mark C was great dapibus enim venenatis. Quisque finibus libero nisi, ac viverra ipsum tempor at. Vivamus in velit a risus vestibulum pretium id nec ipsum.</p>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-lg-4">
+								<div class="s-client clearfix">
+									<img src="assets/images/client-3.png" alt="" />
+									<div class="client-detail">
+										<h4>Mark McDOE</h4>
+										<img src="assets/images/rating-star.png" alt="" />
+									</div>
+									<p>Working with Mark C was great dapibus enim venenatis. Quisque finibus libero nisi, ac viverra ipsum tempor at. Vivamus in velit a risus vestibulum pretium id nec ipsum.</p>
+								</div>
+							</div>
+						</div>
+						<div class="row rating">
+							<div class="col-xs-12 col-sm-12 col-lg-4">
+								<div class="s-client clearfix">
+									<img src="assets/images/client-1.png" alt="" />
+									<div class="client-detail">
+										<h4>John Klen</h4>
+										<img src="assets/images/rating-star.png" alt="" />
+									</div>
+									<p>Working with Mark C was great dapibus enim venenatis. Quisque finibus libero nisi, ac viverra ipsum tempor at. Vivamus in velit a risus vestibulum pretium id nec ipsum.</p>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-lg-4">
+								<div class="s-client clearfix">
+									<img src="assets/images/client-2.png" alt="" />
+									<div class="client-detail">
+										<h4>Anne Klen</h4>
+										<img src="assets/images/rating-star.png" alt="" />
+									</div>
+									<p>Working with Mark C was great dapibus enim venenatis. Quisque finibus libero nisi, ac viverra ipsum tempor at. Vivamus in velit a risus vestibulum pretium id nec ipsum.</p>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-lg-4">
+								<div class="s-client clearfix">
+									<img src="assets/images/client-3.png" alt="" />
+									<div class="client-detail">
+										<h4>Mark McDOE</h4>
+										<img src="assets/images/rating-star.png" alt="" />
+									</div>
+									<p>Working with Mark C was great dapibus enim venenatis. Quisque finibus libero nisi, ac viverra ipsum tempor at. Vivamus in velit a risus vestibulum pretium id nec ipsum.</p>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<!-- end of review section -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-6">
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-4 footer-mobile">
+						<h5>Drop By Tech</h5>
+						<ul class="list-unstyled">
+							<li><a href="javascript:void(0);">About us</a></li>
+							<li><a href="javascript:void(0);">Blog</a></li>
+							<li><a href="javascript:void(0);">Legal</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4 footer-mobile">
+						<h5>Clients</h5>
+						<ul class="list-unstyled">
+							<li><a href="javascript:void(0);">How to use Drop By Tech</a></li>
+							<li><a href="javascript:void(0);">Sign Up</a></li>
+							<li><a href="javascript:void(0);">Support Center</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-4 col-md-4 footer-mobile">
+						<h5>IT Contractors</h5>
+						<ul class="list-unstyled">
+							<li><a href="javascript:void(0);">How to use Drop By Tech</a></li>
+							<li><a href="javascript:void(0);">Sign Up</a></li>
+							<li><a href="javascript:void(0);">Support Center</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-6">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-6 footer-mobile">
+						<h5>questions</h5>
+						<ul class="list-unstyled">
+							<li><strong>Email:</strong> <a href="javascript:void(0);">Support@DropByTech.com</a></li>
+							<li><strong>Phone Number:</strong> <a href="javascript:void(0);">1 (800) 666-6666</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 text-center">
+						<img src="assets/images/footer-logo.png" alt="" />
+						<ul class="list-inline footer-links">
+							<li><a href="javascript:void(0);">Privacy Policy</a></li>
+							<li><a href="javascript:void(0);">Terms of Use</a></li>
+						</ul>
+						<ul class="list-inline footer-social">
+							<li class="icon-facebook"><a href="javascript:void(0);">Facebook</a></li>
+							<li class="icon-google"><a href="javascript:void(0);">Google Plus</a></li>
+							<li class="icon-twitter"><a href="javascript:void(0);">Twitter</a></li>
+							<li class="icon-pinterest"><a href="javascript:void(0);">Pinterest</a></li>
+							<li class="icon-rss"><a href="javascript:void(0);">RSS</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="assets/js/vendor/jquery.min.js"></script>
+<script src="assets/js/vendor/jquery-ui.js"></script>
+<script src="assets/js/vendor/bootstrap.js"></script>
+<script src="assets/js/vendor/bootstrap-multiselect.js"></script>
+<script src="assets/js/vendor/owl.carousel.js"></script>
+<script src="assets/js/vendor/jquery.placeholder.js"></script>
+<script src="assets/js/app/custom.js"></script>
+<script type="text/javascript">
+	$("#datepicker").datepicker();
+</script>
+</body>
+</html>
